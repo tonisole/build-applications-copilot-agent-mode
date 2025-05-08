@@ -10,7 +10,7 @@ def api_root(request, format=None):
         return Response({"message": "POST request received"}, status=status.HTTP_201_CREATED)
 
     # Use Codespace URL for API endpoints
-    base_url = 'https://bug-free-lamp-v6g97g69j2xrwr-8000.app.github.dev/'
+    base_url = os.getenv('CODESPACES_BASE_URL', 'https://bug-free-lamp-v6g97g69j2xrwr-8000.app.github.dev/')
     return Response({
         'users': base_url + 'api/users/?format=api',
         'teams': base_url + 'api/teams/?format=api',

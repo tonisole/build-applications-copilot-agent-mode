@@ -1,0 +1,117 @@
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+  background-attachment: fixed;
+}
+
+.navbar {
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.08);
+  background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%) !important;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  color: #fff !important;
+  letter-spacing: 1px;
+}
+.octofit-logo {
+  height: 40px;
+  margin-right: 12px;
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin-left: 8px;
+  margin-right: 8px;
+  transition: color 0.2s;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+  color: #ffe082 !important;
+}
+
+.card {
+  border-radius: 1rem;
+  border: none;
+}
+.card-title {
+  font-weight: 700;
+  color: #6a82fb !important;
+  letter-spacing: 1px;
+}
+.card-text {
+  color: #444;
+}
+
+.table {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #fff;
+}
+.table thead {
+  background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f3f6fd;
+}
+.table-hover tbody tr:hover {
+  background-color: #ffe0f0;
+}
+
+.btn-primary, .btn-outline-primary {
+  border-radius: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-primary {
+  background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+  border: none;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 100%);
+}
+.btn-outline-primary {
+  color: #6a82fb;
+  border: 2px solid #6a82fb;
+  background: #fff;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+  color: #fff;
+  background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+  border: 2px solid #fc5c7d;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #fc5c7d;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #6a82fb;
+  text-decoration: underline;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .octofit-logo {
+    height: 28px;
+    margin-right: 8px;
+  }
+  .card {
+    padding: 1rem !important;
+  }
+}
